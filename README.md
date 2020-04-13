@@ -10,6 +10,8 @@ HttpRequest.java is used and the author of this file is Eric Pogue.
 
 Nathaniel Wascher, a member in our group (The Spicy Chalupas), allowed us to view his code.
 
+The online videos posted in our sprint 6 planning were all referenced for the sleep, sleepFast, sleepFastImplementRunnable and JsonValidateIndex java files.
+
 Assignment: SwissArmyKnife V2 (sak)
 
 Contact: luisbarrera@lewisu.edu
@@ -32,10 +34,3 @@ java sak -Sleep
 java sak -SleepFast
 
 java sak -SleepFastImplementsRunnable
-
-TO LOOK AT THE CODE:
-code ./sak.java
-
-code ./HttpRequest.java
-
-code ./HelpCommand.java
