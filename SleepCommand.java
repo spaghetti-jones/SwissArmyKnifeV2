@@ -1,4 +1,4 @@
-class OneSecondSleeper { //class that knows how to sleep
+class OneSecondSleeper {
     private int sleepingUnit;
 
     OneSecondSleeper(int unitIn) {
@@ -8,7 +8,7 @@ class OneSecondSleeper { //class that knows how to sleep
     public void sleepCommand() {
         System.out.println("Put " + sleepingUnit + " to sleep");
         try {
-            Thread.sleep(1000); //Sleep for one second.
+            Thread.sleep(1000);
         }catch(Exception e){}
         System.out.println(sleepingUnit + "...finished");
     }

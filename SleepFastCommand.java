@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class OneSecondFastSleeper extends Thread { //class that knows how to sleep
+class OneSecondFastSleeper extends Thread {
     private int sleepingUnit;
 
     public void run() {
@@ -14,7 +14,7 @@ class OneSecondFastSleeper extends Thread { //class that knows how to sleep
     public void sleepCommand() {
         System.out.println("Put " + sleepingUnit + " to sleep");
         try {
-            Thread.sleep(1000); //Sleep for one second.
+            Thread.sleep(1000);
         } catch(Exception e) {}
         System.out.println(sleepingUnit + "...finished");
     }
@@ -47,7 +47,6 @@ public class SleepFastCommand {
         System.out.println("\nFunction execution time: " + (finishExecuting - startExecuting)/1000000 + " milliseconds");
         System.out.println("");
 
-        //Sleeping ArrayList
         ArrayList<OneSecondFastSleeper> list = new ArrayList<OneSecondFastSleeper>();
         for (int i=0; i<10; i++) {
             list.add(new OneSecondFastSleeper(i));

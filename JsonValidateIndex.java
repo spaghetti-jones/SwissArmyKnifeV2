@@ -1,13 +1,13 @@
 public class JsonValidateIndex extends HttpRequest{
     public Boolean parseIndex() {
-        for (String line : urlContent) {
-            parseLine(line);
+        for (String content : urlContent) {
+            parse(content);
         }
         return true;
     }
     
-    private void parseLine(String line) {
-        String[] subString = line.split("\"");
+    private void parse(String content) {
+        String[] subString = content.split("\"");
 
         if (subString.length > 11) { //subString[11] is the contactURL.
             JsonValidateIndex requestIndex = new JsonValidateIndex();
